@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja strona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <!-- tu jest cała moja zawrtość strony -->
+  <body>
+    <!-- <div id="test">
+      <h2>Sekcja testowa</h2>
+      <div id="testText">Lorem ipsum...</div>
+      <button id="testButton">Kliknij</button>
+    </div> -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div>
+            <svg
+              width="60px"
+              height="60px"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#bf0034"
+            >
+              <path
+                d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"
+                stroke="#bf0034"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"
+                stroke="#bf0034"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+
+          <div>
+            <svg
+              class="icon-menu"
+              width="44px"
+              height="44px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#000"
+            >
+              <path
+                d="M3 5H21"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3 12H21"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3 19H21"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <div class="close-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#interest">Zainteresowania</a></li>
+            <li><a href="#photos">Zdjęcia</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-container-text">
+          <h1>Cześć</h1>
+          <p>
+            Mam na imię Ada. Fascynuje mnie astronomia, eksploracja kosmosu, a
+            od niedawna tez astrofotografia
+          </p>
+          <a href="#about">Poznajmy się</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="section-light">
+        <div class="container about-container">
+          <div>
+            <img
+              src="images/female-astronaut.webp"
+              alt="Zdjęcie młodej astonautki"
+            />
+          </div>
+          <div>
+            <h2>O mnie</h2>
+            <p><span>J</span>estem Ada</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              dolorem excepturi vero? Tenetur assumenda minus dicta rem
+              consectetur deleniti eos ipsam omnis porro nemo, perspiciatis
+              exercitationem. Delectus molestiae cumque nostrum.
+              <br />
+              <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              dolorem excepturi vero? Tenetur assumenda minus dicta rem
+              consectetur deleniti eos ipsam omnis porro nemo, perspiciatis
+              exercitationem. Delectus molestiae cumque nostrum.<br />
+              <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              dolorem excepturi vero? Tenetur assumenda minus dicta rem
+              consectetur deleniti eos ipsam omnis porro nemo, perspiciatis
+              exercitationem. Delectus molestiae cumque nostrum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="interest" class="section-dark dark">
+        <div class="container">
+          <ul class="interest-container">
+            <li class="interest-item">
+              <div class="interest-icon">
+                <?xml version="1.0" encoding="UTF-8"?><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#000000"
+                >
+                  <path
+                    d="M11.5 7L9 12H15L12.5 17"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M20.8388 20.8391H17.3033M20.8388 20.8391V17.3035M20.8388 20.8391L17 17"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M2.76777 2.76788H6.3033M2.76777 2.76788V6.30341M2.76777 2.76788L6.60657 6.60693"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Odkrycia</h3>
+              <ul class="interest-first">
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+                <li>
+                  Minima, ut doloribus consectetur veniam explicabo sequi sint
+                  obcaecati sed molestias libero iste magnam sapiente alias
+                  totam laudantium repudiandae laborum nisi in.
+                </li>
+              </ul>
+            </li>
+            <li class="interest-item">
+              <div class="interest-icon">
+                <?xml version="1.0" encoding="UTF-8"?><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#000000"
+                >
+                  <path
+                    d="M12 21C7.02944 21 3 19.2091 3 17C3 14.7909 7.02944 13 12 13C16.9706 13 21 14.7909 21 17C21 19.2091 16.9706 21 12 21Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12 2C13.6569 2 15 3.34315 15 5V6H9V5C9 3.34315 10.3431 2 12 2Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3.5 15.5L7.5 8.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M20.5 15.5L16.5 8.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Kosmos</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Minima, ut doloribus consectetur veniam explicabo sequi sint
+                obcaecati sed molestias libero iste magnam sapiente alias totam
+                laudantium repudiandae laborum nisi in.
+              </p>
+            </li>
+            <li class="interest-item">
+              <div class="interest-icon">
+                <?xml version="1.0" encoding="UTF-8"?><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#000000"
+                >
+                  <path
+                    d="M3.5 6.00398C3.5 7.80795 6.35714 9 11.5 9C18.5 9 19.5 6.00398 19.5 6.00398C19.5 6.00398 18.5 3 11.5 3C6.35714 3 3.5 4.2 3.5 6.00398Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3.5 12.004C3.5 13.808 6.35714 15 11.5 15C18.5 15 19.5 12.004 19.5 12.004C19.5 12.004 18.5 9 11.5 9C6.35714 9 3.5 10.2 3.5 12.004Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3.5 18.004C3.5 19.808 6.35714 21 11.5 21C18.5 21 19.5 18.004 19.5 18.004C19.5 18.004 18.5 15 11.5 15C6.35714 15 3.5 16.2 3.5 18.004Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.5 12C19.5 12 20.5 11.025 20.5 9C20.5 6.975 19.5 6 19.5 6"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M20.5 4C20.5 5.35 19.5 6 19.5 6"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19.5 18C19.5 18 20.5 17.025 20.5 15C20.5 12.975 19.5 12 19.5 12"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M20.5 20C20.5 18.65 19.5 18 19.5 18"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Astronomia</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Minima, ut doloribus consectetur veniam explicabo sequi sint
+                obcaecati sed molestias libero iste magnam sapiente alias totam
+                laudantium repudiandae laborum nisi in.
+              </p>
+            </li>
+            <li class="interest-item">
+              <div class="interest-icon">
+                <?xml version="1.0" encoding="UTF-8"?><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  color="#000000"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M5 6C5.55228 6 6 5.55228 6 5C6 4.44772 5.55228 4 5 4C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6Z"
+                    fill="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19 20C19.5523 20 20 19.5523 20 19C20 18.4477 19.5523 18 19 18C18.4477 18 18 18.4477 18 19C18 19.5523 18.4477 20 19 20Z"
+                    fill="#000000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M19 19L17.5 17.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M15.5 15.5L14.5 14.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M12.5 12.5L11.5 11.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.5 9.5L8.5 8.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M6.5 6.5L5 5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Fizyka</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Minima, ut doloribus consectetur veniam explicabo sequi sint
+                obcaecati sed molestias libero iste magnam sapiente alias totam
+                laudantium
+                <strong>repudiandae laborum nisi in.</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="photos" class="section-light">
+        <div class="container">
+          <header>
+            <h2>Zdjęcia</h2>
+            <p>
+              To moje ulubione zdjęcia nocnego nieba: Drogi Mlecznej, zorzy
+              polarnej i innych pięknych zjawisk, które możemy obserwować na
+              niebie. Od niedawna jestem fanką astrofotografii i próbuję swoich
+              sił w robieniu nocnych zdjęć.
+            </p>
+          </header>
+          <div class="photos-container">
+            <figure>
+              <img
+                src="images/startrails-faik-akmd.jpg"
+                alt="Star trails over the horizon"
+              />
+              <figcaption>
+                Zdjęcie autorstwa <strong>Faik Akmd</strong> z
+                <strong>Pexels</strong>
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/northern-lights-stein-egil-liland.jpg"
+                alt="Aurora borealis in the night sky"
+              />
+              <figcaption>
+                Zdjęcie autorstwa Stein Egil Liland z Pexels
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/moon-sevenstorm-juhaszimrus.jpg"
+                alt="Full moon"
+              />
+              <figcaption>
+                Zdjęcie autorstwa Svenstorm Juhaszminus z Pexels
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/antenna-igor-mashkov.webp"
+                alt="A telescope under the starry sky"
+              />
+              <figcaption>Zdjęcie autorstwa Igor Hashkov z Pexels</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/milky-way-philippe-donn.jpg"
+                alt="The Milky Way"
+              />
+              <figcaption>Zdjęcie autorstwa Philippe Donn z Pexels</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/violet-sky-felix-mittermeier.jpg"
+                alt="Light beam under the stars"
+              />
+              <figcaption>
+                Zdjęcie autorstwa Felix Mittermeier z Pexels
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="quote" class="section-dark">
+        <div class="container">
+          <blockquote>
+            <div class="quote-icon-wrapper">
+              <svg
+                class="quote-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+            </div>
+            <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
+
+            <footer>
+              <cite>Stanisław Lem, <em>Świat według Lema</em></cite>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+      <section id="contact" class="section-light">
+        <div class="container">
+          <header>
+            <h2 class="contact-title">Napisz do mnie</h2>
+          </header>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Imię:</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Imię"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="imie.nazwisko@mail.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label"
+                >Miejsce na Twoją wiadomość:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Twoja wiadomość"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-button">Wyślij</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="section-dark dark footer">
+      <div class="container footer-container">
+        <div class="footer-text">
+          <p>© STEAM Academy 2022</p>
+          <p>Główne zdjęcie autorstwa <b>Snapwire</b> z <b>Pexels</b></p>
+          <p>Zdjęcie astronautki autorstwa <b>Mikhail Nilov z Pexels</b></p>
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://facebook.com" target="_blank">
+            <?xml version="1.0" encoding="UTF-8"?><svg
+              width="24px"
+              height="24px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#000000"
+            >
+              <path
+                d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <?xml version="1.0" encoding="UTF-8"?><svg
+              width="24px"
+              height="24px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#000000"
+            >
+              <path
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                stroke-width="1.5"
+              ></path>
+              <path
+                d="M17.5 6.51L17.51 6.49889"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank">
+            <?xml version="1.0" encoding="UTF-8"?><svg
+              width="24px"
+              height="24px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#000000"
+            >
+              <path
+                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18C11.6569 18 13 16.6569 13 15V6C13.3333 7 14.6 9 17 9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

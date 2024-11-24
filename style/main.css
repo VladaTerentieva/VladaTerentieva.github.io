@@ -1,0 +1,454 @@
+/* tutaj jest mój css */
+@import url(normalize.css);
+
+/* resetowanie styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  color: #373737;
+}
+
+img {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* stylowanie sekcji */
+#header {
+  padding: 40px 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 0.335) 35%,
+      rgba(0, 213, 255, 0.092) 100%
+    ),
+    url("../images/antenna-igor-mashkov.webp");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+section {
+  padding: 70px 0;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1240px;
+}
+.section-dark {
+  color: #fff;
+}
+.dark {
+  background-color: #4f247c;
+}
+#quote {
+  background-color: #bf0034;
+}
+.footer {
+  padding: 30px 20px;
+}
+/* szary: #373737 - kolor czcionki
+różowy: #bf0034
+fioletowy: #4f247c
+biały: #ffffff */
+
+/* stylowanie typografii */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 15px;
+}
+p {
+  text-align: center;
+}
+
+/* stylowanie headera */
+/* stylowanie menu mobilnego */
+.close-menu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.close-menu svg {
+  fill: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+
+.open {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container-text {
+  padding-top: 150px;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+.header-container-text p {
+  text-align: left;
+  line-height: 1.4;
+  font-size: 30px;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+.header-container-text a {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  border: solid 3px #bf0034;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-container-text a:hover {
+  background-color: #bf0034;
+}
+.nav-list {
+  width: 50%;
+  display: none;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.nav-list a {
+  color: #fff;
+}
+.nav-list a:hover {
+  color: #bf0034;
+}
+@media screen and (min-width: 992px) {
+  .nav-list {
+    display: flex;
+    gap: 15px;
+  }
+  .icon-menu {
+    display: none;
+  }
+}
+/* stylowanie sekcji o mnie */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-container div {
+  width: 100%;
+}
+.about-container div:first-of-type {
+  position: relative;
+  height: auto;
+}
+.about-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.about-container h2 {
+  color: #bf0034;
+  text-align: left;
+}
+.about-container p {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.about-container p:first-of-type {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.about-container p:first-of-type span {
+  color: #bf0034;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+  }
+}
+
+/* Robienie obramowania wokół zdjęcia */
+
+.about-container div:first-of-type::before,
+.about-container div:first-of-type::after {
+  content: "";
+  position: absolute;
+  z-index: -1; /* Umieszcza dekoracje za obrazem */
+}
+
+.about-container div:first-of-type::before {
+  bottom: -25px;
+  right: -25px;
+  width: 100%;
+  height: 100%;
+  background-color: #bf0034;
+}
+
+.about-container div:first-of-type::after {
+  box-sizing: border-box;
+  top: -25px;
+  left: -25px;
+  width: 100%;
+  height: 100%;
+  border: 15px solid #5000bf; /* Fioletowe obramowanie */
+}
+
+/* stylowanie sekcji zainteresowania */
+
+.interest-first {
+  list-style-type: kannada;
+  text-align: center;
+}
+
+#interest p,
+.interest-first {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+.interest-item {
+  width: 100%;
+}
+.interest-icon {
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #bf0034;
+  border-radius: 50%;
+}
+.interest-icon svg {
+  stroke: #fff;
+  width: 45px;
+  height: 45px;
+  transform: translate(50%, 50%);
+}
+
+/* Dostosowanie sekcji do szerokości ekranu */
+@media screen and (min-width: 768px) {
+  .interest-container {
+    flex-direction: row;
+  }
+
+  .interest-item {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .interest-item {
+    width: 20%;
+  }
+}
+
+/* stylowanie sekcji zdjęcia */
+
+#photos h2 {
+  color: #4f247c;
+}
+
+#photos p {
+  margin: 0 auto; /* na środkowanie elementu */
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  line-height: 1.75;
+}
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 16px;
+  text-align: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+#photos img {
+  height: 250px;
+  margin-bottom: 12px;
+}
+
+#photos figure {
+  width: 100%;
+}
+
+/* Dostosowanie sekcji do szerokości ekranu */
+@media screen and (min-width: 768px) {
+  .photos-container {
+    flex-direction: row;
+  }
+
+  #photos figure {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #photos img {
+    height: 350px;
+  }
+  #photos figure {
+    width: 30%;
+  }
+}
+
+/* Sekcja cytat */
+
+.quote-icon-wrapper {
+  display: inline;
+}
+.quote-icon {
+  width: 75px;
+  height: 75px;
+  fill: #4f247c;
+  transform: translateY(30%);
+}
+
+blockquote p {
+  display: inline;
+  text-align: left;
+  font-size: 50px;
+  line-height: 1.4;
+}
+blockquote footer {
+  text-align: right;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+/* stylowanie sekcji contact */
+
+#contact {
+  text-align: center;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Grupy pól formularza */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Etykiety pól */
+.form-label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+/* Pola tekstowe i textarea */
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 2px solid #5a0f78;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Stylowanie przycisku */
+.form-button {
+  width: 100%;
+  background-color: #5a0f78;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Efekty hover dla przycisku */
+.form-button:hover {
+  background-color: #450a5a;
+}
+
+/* Stylowanie footera strony */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-text p {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.footer-text p:first-of-type {
+  margin-bottom: 20px;
+}
+.footer-social-icons {
+  text-align: center;
+}
+.footer-social-icons svg {
+  stroke: #fff;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .footer-text p {
+    text-align: left;
+  }
+}
+
